@@ -15,7 +15,7 @@
 			<key>Fixes</key>
 			<dict>
 				<key>AddDTGP</key>
-				<true/>
+				<false/>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>DeleteUnused</key>
@@ -79,20 +79,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change H_EC to EC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					SF9FQw==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUNfXw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change HDAS to HDEF</string>
 					<key>Disabled</key>
 					<false/>
@@ -121,16 +107,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change MEI to IMEI</string>
+					<string>change H_EC to EC</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
-					TUVJXw==
+					SF9FQw==
 					</data>
 					<key>Replace</key>
 					<data>
-					SU1FSQ==
+					RUNfXw==
 					</data>
 				</dict>
 				<dict>
@@ -163,7 +149,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change (PTS,N) to ZPTS (SSDT-PTSWAK)</string>
+					<string>change Method(_PTS,N) to ZPTS (SSDT-PTSWAK)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -177,7 +163,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change (WAK,N) to ZWAK (SSDT-PTSWAK)</string>
+					<string>change Method(_WAK,N) to ZWAK (SSDT-PTSWAK)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -230,7 +216,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 -disablegfxfirmware -cdfon -igfxnohdmi -nobiobeta lilucpu=8</string>
+		<string>dart=0 nv_disable=1 -cdfon -igfxnohdmi -nobiobeta lilucpu=8</string>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
 		<key>HibernationFixup</key>
@@ -266,7 +252,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>AFGLowPowerState</key>
-			<false/>
+			<true/>
 			<key>Inject</key>
 			<string>No</string>
 			<key>ResetHDA</key>
@@ -280,25 +266,31 @@
 				<data>
 				AAAWGQ==
 				</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
 				<key>device-id</key>
 				<data>
 				FhkAAA==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
 				</data>
 				<key>framebuffer-con1-enable</key>
 				<data>
 				AQAAAA==
 				</data>
-				<key>framebuffer-con1-index</key>
+				<key>framebuffer-con1-type</key>
 				<data>
-				/////w==
+				AAQAAA==
 				</data>
 				<key>framebuffer-con2-enable</key>
 				<data>
 				AQAAAA==
 				</data>
-				<key>framebuffer-con2-index</key>
+				<key>framebuffer-con2-type</key>
 				<data>
-				/////w==
+				AAgAAA==
 				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
@@ -316,6 +308,8 @@
 				<data>
 				AAAAgA==
 				</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
@@ -399,6 +393,8 @@
 		<true/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
+		<key>FakeCPUID</key>
+		<string>0x0506e3</string>
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
@@ -446,7 +442,7 @@
 				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AEFQUExFIFNTRAA=
@@ -493,61 +489,29 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>12/19/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBP141.88Z.F000.B00.1812191142</string>
-		<key>Board-ID</key>
-		<string>Mac-B4831CEBD52A0C4C</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C02711306QXHWVPJC</string>
-		<key>BoardType</key>
-		<integer>10</integer>
 		<key>BoardVersion</key>
 		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x09</string>
-		<key>EfiVersion</key>
-		<string>186.0.0.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
-		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>Mobile</key>
 		<true/>
-		<key>PlatformFeature</key>
-		<string>0x1A</string>
 		<key>ProductName</key>
 		<string>MacBookPro14,1</string>
-		<key>SerialNumber</key>
-		<string>C02TF04UHV29</string>
-		<key>SmUUID</key>
-		<string>30E078FE-4206-4A04-BE70-53F4AB7FB3C6</string>
-		<key>Version</key>
-		<string>1.0</string>
+		<key>Trust</key>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string>37C3396D-2367-4981-8F59-EECB74FB4EC6</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
-		<true/>
+		<false/>
 	</dict>
 </dict>
 </plist>

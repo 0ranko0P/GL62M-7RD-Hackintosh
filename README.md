@@ -3,32 +3,29 @@ MSI-GL62M 7RD Hackintosh
 [![works badge](https://cdn.jsdelivr.net/gh/nikku/works-on-my-machine@v0.2.0/badge.svg)][project_link]
 
 Hackintosh clover configuration for [**MSI GL62M 7RD**][msi_overview].
-With a few modifications, can work for all GL62M 7RD version theoretically.
+
+With a few modifications, can work for all GL62M 7RD version *theoretically*.
 Tested platform: `GL62M 7RD-223cn`.
-Most of functions are working, include built-in camera, audio, trackpad, sleep.
+
+Most of functions are working, include built-in camera, audio, Touchkpad, sleep and HDMI.
 
 ## Specifications
 | Basic | Spec Sheet |
 |--|--|
 | CPU | Intel i7-7700HQ |
-| GPU | HD630 |
+| GPU | HD630 (eDP) |
 | Chipset | Intel HM175 |
 | Audio | Realtek ALC898 |
 | Ethernet | Atheros AR8175 |
-| WiFi | AC3165 (M.2 2230) |
-| Screen | LG LP156WF6-SPK3 (FHD/ eDP) | 
+| WiFi | Intel AC3165 (M.2 2230) |
 | Touchkpad | Synaptics (PS2) | 
 | USB controller | 100/C230 Series xHCI |
-| | 2x USB 3.1 Gen1 (TypeA) | 
-|  | 1x USB 3.1 Gen1 (TypeC) | 
-|  | 1x USB 2.0 (TypeA) | 
 
 ## Before installation
 Make sure at least upgrade your [BIOS][msi_bios] to `E16J9IMS.324` and [Firmware][msi_firmware] up to `16J9EMS1.112`.
 
 ## Known issues
 * MiniDP
-* HDMI
 * SD card reader
 
 ## WiFi & Bluetooth
@@ -46,7 +43,7 @@ VirtualSmc
 > Note: SMCHelper.efi is not compatible with VirtualSMC.efi and must be removed
 
 ## Note 
-USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
+More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
 [wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
 [msi_overview]: https://www.msi.com/Laptop/support/GL62M-7RD
