@@ -30,6 +30,7 @@ Make sure at least upgrade your [BIOS][msi_bios] to `E16J9IMS.324` and [Firmware
 
 ## WiFi & Bluetooth
 Built-in Intel WiFi card won't work, go buy a Broadcom card. See [guide][wifi_guide].
+> Now supports DW1820A, see branch: [mojave dw1820a][dw1820a]
 
 ## UEFI drivers
 ``` c++
@@ -45,6 +46,7 @@ VirtualSmc
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
+[dw1820a]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/mojave_DW1820A
 [wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
 [msi_overview]: https://www.msi.com/Laptop/support/GL62M-7RD
 [msi_bios]: https://www.msi.com/Laptop/support/GL62M-7RD#down-bios
