@@ -17,7 +17,7 @@ Most of functions are working, include built-in camera, audio, Touchkpad, sleep 
 | Chipset | Intel HM175 |
 | Audio | Realtek ALC898 |
 | Ethernet | Atheros AR8175 |
-| WiFi | Intel AC3165 (M.2 2230) |
+| WiFi | Broadcom BCM94350ZAE/DW1820A (M.2 2230) |
 | Touchkpad | Synaptics (PS2) | 
 | USB controller | 100/C230 Series xHCI |
 
@@ -29,7 +29,12 @@ Make sure at least upgrade your [BIOS][msi_bios] to `E16J9IMS.324` and [Firmware
 * SD card reader
 
 ## WiFi & Bluetooth
-Built-in Intel WiFi card won't work, go buy a Broadcom card. See [guide][wifi_guide].
+Replace built-in Intel card to Broadcom BCM94350ZAE/DW1820A.
+
+How to tear down: [Youtube][tear_down] (This video is for `7REX 1252`, but the procedure is very similar.).
+![tear down][tear_down_pic]
+
+Download modified [BrcmPatchRAM kext][brcm] by [headkaze].
 
 ## UEFI drivers
 ``` c++
@@ -45,6 +50,10 @@ VirtualSmc
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
+[brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/mojave_DW1820A/kexts#wifiac--bt4le
+[headkaze]: https://github.com/headkaze
+[tear_down]: https://www.youtube.com/watch?v=-WHgFWf_66A
+[tear_down_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/mojave_DW1820A/Tear_down.png
 [wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
 [msi_overview]: https://www.msi.com/Laptop/support/GL62M-7RD
 [msi_bios]: https://www.msi.com/Laptop/support/GL62M-7RD#down-bios
