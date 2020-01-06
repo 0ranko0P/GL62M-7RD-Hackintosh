@@ -30,6 +30,11 @@ Make sure at least upgrade your [BIOS][msi_bios] to `E16J9IMS.324` and [Firmware
 * SD card reader
 
 ## WiFi & Bluetooth
+The DW1820A/BCM94350ZAE have different models:
+![1820A versions][1820a_models]
+It is best to have model CN-0VW3T3.
+For more details refer [osxlatitude][wlan_ts_link].
+
 Replace built-in Intel card to Broadcom BCM94350ZAE/DW1820A.
 
 How to tear down: [Youtube][tear_down] (This video is for `7REX 1252`, but the procedure is very similar.).
@@ -52,6 +57,7 @@ VirtualSmc
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
+[1820a_models]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/mojave_DW1820A/dw1820A.png
 [brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/mojave_DW1820A/kexts#wifiac--bt4le-dw1820a
 [bt_ts_link]: https://osxlatitude.com/forums/topic/11540-dw1820a-the-general-troubleshooting-thread
 [tear_down]: https://www.youtube.com/watch?v=-WHgFWf_66A
@@ -62,3 +68,4 @@ More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 [msi_firmware]: https://www.msi.com/Laptop/support/GL62M-7RD#down-firmware
 [project_link]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh
 [usb_map]:  https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/master/hotpatchs/deprecated/SSDT-UIAC.dsl
+[wlan_ts_link]: https://osxlatitude.com/forums/topic/11322-broadcom-bcm4350-cards-under-high-sierramojavecatalina
