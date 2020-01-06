@@ -1,3 +1,4 @@
+
 MSI-GL62M 7RD Hackintosh
 ======
 [![works badge](https://cdn.jsdelivr.net/gh/nikku/works-on-my-machine@v0.2.0/badge.svg)][project_link]
@@ -34,7 +35,7 @@ Replace built-in Intel card to Broadcom BCM94350ZAE/DW1820A.
 How to tear down: [Youtube][tear_down] (This video is for `7REX 1252`, but the procedure is very similar.).
 ![tear down][tear_down_pic]
 
-Download modified [BrcmPatchRAM kext][brcm] by [headkaze].
+ [Kext][brcm] part for BrcmPatchRAM installation.
 
 ## UEFI drivers
 ``` c++
@@ -50,8 +51,7 @@ VirtualSmc
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
-[brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/mojave_DW1820A/kexts#wifiac--bt4le
-[headkaze]: https://github.com/headkaze
+[brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/mojave_DW1820A/kexts#wifiac--bt4le-dw1820a
 [tear_down]: https://www.youtube.com/watch?v=-WHgFWf_66A
 [tear_down_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/mojave_DW1820A/Tear_down.png
 [wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
