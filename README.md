@@ -36,6 +36,7 @@ How to tear down: [Youtube][tear_down] (This video is for `7REX 1252`, but the p
 ![tear down][tear_down_pic]
 
  [Kext][brcm] part for BrcmPatchRAM installation.
+ [Bluetooth Troubleshooting][bt_ts_link]
 
 ## UEFI drivers
 ``` c++
@@ -52,6 +53,7 @@ VirtualSmc
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
 [brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/mojave_DW1820A/kexts#wifiac--bt4le-dw1820a
+[bt_ts_link]: https://osxlatitude.com/forums/topic/11540-dw1820a-the-general-troubleshooting-thread
 [tear_down]: https://www.youtube.com/watch?v=-WHgFWf_66A
 [tear_down_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/mojave_DW1820A/Tear_down.png
 [wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
