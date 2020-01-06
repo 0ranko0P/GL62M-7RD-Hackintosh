@@ -16,6 +16,8 @@
 			<dict>
 				<key>AddDTGP</key>
 				<false/>
+				<key>AddHDMI</key>
+				<false/>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>DeleteUnused</key>
@@ -212,6 +214,8 @@
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
+		<key>HDMIInjection</key>
+		<false/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x02,0)</key>
@@ -277,6 +281,8 @@
 			<key>Inject</key>
 			<true/>
 		</dict>
+		<key>UseIntelHDMI</key>
+		<false/>
 	</dict>
 	<key>GUI</key>
 	<dict>
