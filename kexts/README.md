@@ -13,6 +13,10 @@ Kexts list
 * [`AirportBrcmFixup`][air_k]
 * [`BrcmPatchRAM`][brcm_k]
 
+Note:
+Different kext installation location requires different firmware kext.
+Read [document][brcm_doc_k] for more details.
+
 ## Function keys
 To use function keys on MSI keyboard the file at ``VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard/Contents/Info.plist`` need to be replaced by this [Info.plist][key_map].
 
@@ -20,7 +24,8 @@ More Custom Keyboard Mapping see [Wiki][ps2_wiki].
 
 [alc_k]: https://github.com/acidanthera/AppleALC/releases
 [air_k]: https://github.com/acidanthera/AirportBrcmFixup/releases
-[brcm_k]: https://github.com/acidanthera/BrcmPatchRAM
+[brcm_k]: https://github.com/acidanthera/BrcmPatchRAM/releases
+[brcm_doc_k]:https://github.com/acidanthera/BrcmPatchRAM/blob/master/README.md
 [ethernet_k]: https://github.com/Mieze/AtherosE2200Ethernet/releases
 [lilu_k]: https://github.com/acidanthera/Lilu/releases
 [key_map]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/master/kexts/Info.plist
