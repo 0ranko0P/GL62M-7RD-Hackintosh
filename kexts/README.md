@@ -9,9 +9,9 @@ Kexts list
 * [`VoodooPS2Controller`][ps2_k]
 * [`WhateverGreen`][green_k]
 
-## WiFi/ac && BT4LE
+## WiFi/ac && BT4LE [DW1820A]
 * [`AirportBrcmFixup`][air_k]
-* [`BrcmPatchRAM_Catalina.zip`][brcm_k]
+* [`BrcmPatchRAM`][brcm_k]
 
 ## Function keys
 To use function keys on MSI keyboard the file at ``VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard/Contents/Info.plist`` need to be replaced by this [Info.plist][key_map].
@@ -20,7 +20,7 @@ More Custom Keyboard Mapping see [Wiki][ps2_wiki].
 
 [alc_k]: https://github.com/acidanthera/AppleALC/releases
 [air_k]: https://github.com/acidanthera/AirportBrcmFixup/releases
-[brcm_k]: https://github.com/headkaze/OS-X-BrcmPatchRAM/releases
+[brcm_k]: https://github.com/acidanthera/BrcmPatchRAM
 [ethernet_k]: https://github.com/Mieze/AtherosE2200Ethernet/releases
 [lilu_k]: https://github.com/acidanthera/Lilu/releases
 [key_map]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/master/kexts/Info.plist
