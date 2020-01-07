@@ -1,4 +1,5 @@
 
+
 MSI-GL62M 7RD Hackintosh
 ======
 [![works badge](https://cdn.jsdelivr.net/gh/nikku/works-on-my-machine@v0.2.0/badge.svg)][project_link]
@@ -38,6 +39,9 @@ For more details refer [osxlatitude][wlan_ts_link].
 Replace built-in Intel card to Broadcom BCM94350ZAE/DW1820A.
 
 How to tear down: [Youtube][tear_down] (This video is for `7REX 1252`, but the procedure is very similar.).
+
+```Always remove the power and battery first!!```
+
 ![tear down][tear_down_pic]
 
  [Kext][brcm] part for BrcmPatchRAM installation.
