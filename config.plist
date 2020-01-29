@@ -24,6 +24,8 @@
 				<false/>
 				<key>FakeLPC</key>
 				<false/>
+				<key>FixHDA</key>
+				<false/>
 				<key>FixHPET</key>
 				<false/>
 				<key>FixIPIC</key>
