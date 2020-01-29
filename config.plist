@@ -171,8 +171,6 @@
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
 		<string>dart=0 nv_disable=1 -cdfon -igfxnohdmi -nobiobeta lilucpu=8 brcmfx-country=#a</string>
-		<key>DefaultVolume</key>
-		<string>Macintosh HD</string>
 		<key>HibernationFixup</key>
 		<false/>
 		<key>Legacy</key>
