@@ -64,12 +64,12 @@ VirtualSmc
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
-[1820a_models]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/mojave_DW1820A/dw1820A.png
+[1820a_models]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/Catalina_DW1820A/screenshots/dw1820A.png
 [about_pic]:https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/Catalina_DW1820A/screenshots/About.png
-[brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/mojave_DW1820A/kexts#wifiac--bt4le-dw1820a
+[brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/Catalina_DW1820A/kexts#wifiac--bt4le-dw1820a
 [bt_ts_link]: https://osxlatitude.com/forums/topic/11540-dw1820a-the-general-troubleshooting-thread
 [tear_down]: https://www.youtube.com/watch?v=-WHgFWf_66A
-[tear_down_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/mojave_DW1820A/Tear_down.png
+[tear_down_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/Catalina_DW1820A/screenshots/Tear_down.png
 [wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
 [msi_overview]: https://www.msi.com/Laptop/support/GL62M-7RD
 [msi_bios]: https://www.msi.com/Laptop/support/GL62M-7RD#down-bios
