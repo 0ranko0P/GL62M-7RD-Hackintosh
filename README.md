@@ -9,6 +9,9 @@ Tested platform: `GL62M 7RD-223cn`.
 
 Most of functions are working, include built-in camera, audio, Touchkpad, sleep and HDMI.
 
+## Screenshots
+![about][about_pic]
+
 ## Specifications
 | Basic | Spec Sheet |
 |--|--|
@@ -47,6 +50,7 @@ VirtualSmc
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
 [dw1820a]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/mojave_DW1820A
+[about_pic]:https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/Catalina/screenshots/About.png
 [wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
 [msi_overview]: https://www.msi.com/Laptop/support/GL62M-7RD
 [msi_bios]: https://www.msi.com/Laptop/support/GL62M-7RD#down-bios
