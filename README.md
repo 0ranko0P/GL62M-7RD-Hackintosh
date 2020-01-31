@@ -11,6 +11,9 @@ Tested platform: `GL62M 7RD-223cn`.
 
 Most of functions are working, include built-in camera, audio, Touchkpad, sleep and HDMI.
 
+## Screenshots
+![about][about_pic]
+
 ## Specifications
 | Basic | Spec Sheet |
 |--|--|
@@ -62,6 +65,7 @@ VirtualSmc
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
 [1820a_models]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/mojave_DW1820A/dw1820A.png
+[about_pic]:https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/Catalina_DW1820A/screenshots/About.png
 [brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/mojave_DW1820A/kexts#wifiac--bt4le-dw1820a
 [bt_ts_link]: https://osxlatitude.com/forums/topic/11540-dw1820a-the-general-troubleshooting-thread
 [tear_down]: https://www.youtube.com/watch?v=-WHgFWf_66A
