@@ -56,4 +56,4 @@ More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 [msi_bios]: https://www.msi.com/Laptop/support/GL62M-7RD#down-bios
 [msi_firmware]: https://www.msi.com/Laptop/support/GL62M-7RD#down-firmware
 [project_link]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh
-[usb_map]:  https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/master/hotpatchs/deprecated/SSDT-UIAC.dsl
+[usb_map]:  https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/Catalina/hotpatchs/deprecated/SSDT-UIAC.dsl
