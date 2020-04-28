@@ -19,7 +19,7 @@ More Custom Keyboard Mapping see [Wiki][ps2_wiki].
 [ethernet_k]: https://github.com/Mieze/AtherosE2200Ethernet/releases
 [cpu_k]: https://github.com/acidanthera/CPUFriend/releases
 [lilu_k]: https://github.com/acidanthera/Lilu/releases
-[key_map]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/master/kexts/Info.plist
+[key_map]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/Catalina/kexts/Info.plist
 [id_k]: https://github.com/al3xtjames/NoTouchID/releases
 [smc_k]: https://github.com/acidanthera/VirtualSMC/releases
 [ps2_k]: https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/
