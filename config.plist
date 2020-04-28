@@ -196,10 +196,6 @@
 		<false/>
 		<key>HWPEnable</key>
 		<true/>
-		<key>HWPValue</key>
-		<string>0x60002301</string>
-		<key>UseARTFrequency</key>
-		<true/>
 	</dict>
 	<key>Comment</key>
 	<string></string>
