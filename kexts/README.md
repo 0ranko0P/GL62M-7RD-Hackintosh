@@ -3,6 +3,7 @@ Kexts list
 
 * [`AppleALC`][alc_k]
 * [`AtherosE2200Ethernet`][ethernet_k] 
+* [`CPUFriend`][cpu_k]
 * [`Lilu`][lilu_k]
 * [`NoTouchID`][id_k]
 * [`VirtualSMC`][smc_k] (Include sensor kexts)
@@ -16,6 +17,7 @@ More Custom Keyboard Mapping see [Wiki][ps2_wiki].
 
 [alc_k]: https://github.com/acidanthera/AppleALC/releases
 [ethernet_k]: https://github.com/Mieze/AtherosE2200Ethernet/releases
+[cpu_k]: https://github.com/acidanthera/CPUFriend/releases
 [lilu_k]: https://github.com/acidanthera/Lilu/releases
 [key_map]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/master/kexts/Info.plist
 [id_k]: https://github.com/al3xtjames/NoTouchID/releases
