@@ -51,16 +51,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _DSM to XDSM</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X0RTTQ==</data>
-					<key>Replace</key>
-					<data>WERTTQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change Method(_PTS,N) to ZPTS (SSDT-PTSWAK)</string>
 					<key>Disabled</key>
 					<false/>
