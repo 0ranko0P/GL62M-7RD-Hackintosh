@@ -81,16 +81,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename SAT0 to SATA (Disk)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>U0FUMA==</data>
-					<key>Replace</key>
-					<data>U0FUQQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change Method(_PTS,N) to ZPTS (SSDT-PTSWAK)</string>
 					<key>Disabled</key>
 					<false/>
