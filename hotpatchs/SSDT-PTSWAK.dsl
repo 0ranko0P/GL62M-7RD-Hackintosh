@@ -20,10 +20,6 @@ DefinitionBlock("", "SSDT", 2, "hack", "_PTSWAK", 0)
 
     External(_SB.PCI0.PEG0.PEGP._ON, MethodObj)
     External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj)
-    // External(_SB.PCI0.PEGP.DGFX._ON, MethodObj)
-    // External(_SB.PCI0.PEGP.DGFX._OFF, MethodObj)
-
-    External(RMCF.DPTS, IntObj) // 1
 
     // In DSDT, native _PTS and _WAK are renamed ZPTS/ZWAK
     // As a result, calls to these methods land here.
@@ -31,15 +27,8 @@ DefinitionBlock("", "SSDT", 2, "hack", "_PTSWAK", 0)
     // Method(_PTS, 1) match SSDT
     Method (_PTS, 1, NotSerialized)
     {
-        If (CondRefOf(\RMCF.DPTS))
-        {
-            If (\RMCF.DPTS)
-            {
-                // enable discrete graphics
-                If (CondRefOf(\_SB.PCI0.PEG0.PEGP._ON)) { \_SB.PCI0.PEG0.PEGP._ON() }
-                // If (CondRefOf(\_SB.PCI0.PEGP.DGFX._ON)) { \_SB.PCI0.PEGP.DGFX._ON() }
-            }
-        }
+        // enable discrete graphics
+        If (CondRefOf(\_SB.PCI0.PEG0.PEGP._ON)) { \_SB.PCI0.PEG0.PEGP._ON() }
 
         // call into original _PTS method
         ZPTS(Arg0)
@@ -56,15 +45,8 @@ DefinitionBlock("", "SSDT", 2, "hack", "_PTSWAK", 0)
         // call into original _WAK method
         Local0 = ZWAK(Arg0)
 
-        If (CondRefOf(\RMCF.DPTS))
-        {
-            If (\RMCF.DPTS)
-            {
-                // disable discrete graphics
-                If (CondRefOf(\_SB.PCI0.PEG0.PEGP._OFF)) { \_SB.PCI0.PEG0.PEGP._OFF() }
-                // If (CondRefOf(\_SB.PCI0.PEGP.DGFX._OFF)) { \_SB.PCI0.PEGP.DGFX._OFF() }
-            }
-        }
+        // disable discrete graphics
+        If (CondRefOf(\_SB.PCI0.PEG0.PEGP._OFF)) { \_SB.PCI0.PEG0.PEGP._OFF() }
 
         // return value from original _WAK
         Return (Local0)
