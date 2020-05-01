@@ -35,14 +35,16 @@ Make sure at least upgrade your [BIOS][msi_bios] to `E16J9IMS.324` and [Firmware
 | `CFG Lock` | Enable |
 | `Intel Speed Shift`(aka. HWP) | Enable |
 
-**Some options only available in advanced mode:**
-In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
+**Some options only available in advanced mode:**\
+In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**\
 Then navigate to [Advanced] tab:
+<pre>
 Power & Performance
-&nbsp; └─ CPU-Power Management Control
-&nbsp; &nbsp; &nbsp;├─ `Intel Speed Shift`
-&nbsp; &nbsp; &nbsp;└─ CPU Lock Configuration
-&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;└─ `CFG Lock`
+└─ CPU-Power Management Control
+   ├─ <b>Intel Speed Shift </b>
+   └─ CPU Lock Configuration
+      └─<b>CFG Lock</b>
+</pre>
 
 ## Known issues
 * MiniDP
