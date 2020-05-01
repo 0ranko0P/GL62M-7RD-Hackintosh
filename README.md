@@ -1,4 +1,3 @@
-
 MSI-GL62M 7RD Hackintosh
 ======
 [![works badge](https://cdn.jsdelivr.net/gh/nikku/works-on-my-machine@v0.2.0/badge.svg)][project_link]
@@ -32,7 +31,7 @@ Make sure at least upgrade your [BIOS][msi_bios] to `E16J9IMS.324` and [Firmware
 |--|--|
 | Fast Boot | Disable |
 | Secure Boot | Disable |
-| `CFG Lock` | Enable |
+| `CFG Lock` | Disable |
 | `Intel Speed Shift`(aka. HWP) | Enable |
 
 **Some options only available in advanced mode:**\
