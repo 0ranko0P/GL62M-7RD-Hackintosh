@@ -1,5 +1,4 @@
 
-
 MSI-GL62M 7RD Hackintosh
 ======
 [![works badge](https://cdn.jsdelivr.net/gh/nikku/works-on-my-machine@v0.2.0/badge.svg)][project_link]
@@ -26,8 +25,24 @@ Most of functions are working, include built-in camera, audio, Touchkpad, sleep 
 | Touchkpad | Synaptics (PS2) | 
 | USB controller | 100/C230 Series xHCI |
 
-## Before installation
+## BIOS Configuration
 Make sure at least upgrade your [BIOS][msi_bios] to `E16J9IMS.324` and [Firmware][msi_firmware] up to `16J9EMS1.112`.
+
+| Settings |  |
+|--|--|
+| Fast Boot | Disable |
+| Secure Boot | Disable |
+| `CFG Lock` | Enable |
+| `Intel Speed Shift`(aka. HWP) | Enable |
+
+**Some options only available in advanced mode:**
+In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
+Then navigate to [Advanced] tab:
+Power & Performance
+&nbsp; └─ CPU-Power Management Control
+&nbsp; &nbsp; &nbsp;├─ `Intel Speed Shift`
+&nbsp; &nbsp; &nbsp;└─ CPU Lock Configuration
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;└─ `CFG Lock`
 
 ## Known issues
 * MiniDP
