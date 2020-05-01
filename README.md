@@ -70,7 +70,6 @@ How to tear down: [Youtube][tear_down] (This video is for `7REX 1252`, but the p
 ## UEFI drivers
 ``` c++
 ApfsDriverLoader
-AudioDxe
 FSInject
 OsxAptioFix3Drv
 VirtualSmc
