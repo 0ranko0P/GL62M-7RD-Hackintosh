@@ -29,20 +29,24 @@ Make sure at least upgrade your [BIOS][msi_bios] to `E16J9IMS.324` and [Firmware
 
 | Settings |  |
 |--|--|
-| Fast Boot | Disable |
-| Secure Boot | Disable |
 | `CFG Lock` | Disable |
+| `CSM` | Disable |
+| Fast Boot | Disable |
 | `Intel Speed Shift`(aka. HWP) | Enable |
+| Secure Boot | Disable |
 
 **Some options only available in advanced mode:**\
-In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**\
-Then navigate to [Advanced] tab:
+In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
+
 <pre>
-Power & Performance
-└─ CPU-Power Management Control
-   ├─ <b>Intel(R) Speed Shift Technology</b>
-   └─ CPU Lock Configuration
-      └─<b>CFG Lock</b>
+[Advanced] tab
+├─ Power & Performance
+│  └─ CPU-Power Management Control
+│     ├─ <b>Intel(R) Speed Shift Technology</b>
+│     └─ CPU Lock Configuration
+│        └─ <b>CFG Lock</b>
+└─ CSM Configuration
+   └─ <b>CSM Support</b>
 </pre>
 
 ## Known issues
