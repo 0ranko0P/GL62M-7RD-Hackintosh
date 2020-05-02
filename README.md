@@ -40,7 +40,7 @@ Then navigate to [Advanced] tab:
 <pre>
 Power & Performance
 └─ CPU-Power Management Control
-   ├─ <b>Intel Speed Shift </b>
+   ├─ <b>Intel(R) Speed Shift Technology</b>
    └─ CPU Lock Configuration
       └─<b>CFG Lock</b>
 </pre>
