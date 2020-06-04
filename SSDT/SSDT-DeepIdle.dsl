@@ -15,29 +15,25 @@
 
 DefinitionBlock("", "SSDT", 2, "hack", "DIDLE", 0)
 {
-    Scope (\_SB)
-    {
-        Method (LPS0, 0, NotSerialized)
-        {
-            Return (One)
+    If (_OSI ("Darwin")) {
+        Scope (\_SB) {
+            Method (LPS0, 0, NotSerialized) {
+                Return (One)
+            }
         }
-    }
-    
-    Scope (\_GPE)
-    {
-        Method (LXEN, 0, NotSerialized)
-        {
-            Return (One)
+
+        Scope (\_GPE) {
+            Method (LXEN, 0, NotSerialized) {
+                Return (One)
+            }
         }
-    }
-    
-    Scope (\)
-    {
-        Name (SLTP, Zero)
-        
-        Method (_TTS, 1, NotSerialized)
-        {
-            Store (Arg0, SLTP)
+
+        Scope (\) {
+            Name (SLTP, Zero)
+
+            Method (_TTS, 1, NotSerialized) {
+                Store (Arg0, SLTP)
+            }
         }
     }
 }

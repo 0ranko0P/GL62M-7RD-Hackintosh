@@ -27,31 +27,32 @@ DefinitionBlock("", "SSDT", 2, "hack", "_PTSWAK", 0)
     // As a result, calls to these methods land here.
     
     // Method(_PTS, 1) match SSDT
-    Method (_PTS, 1, NotSerialized)
-    {
-        // enable discrete graphics
-        If (CondRefOf(\_SB.PCI0.PEG0.PEGP._ON)) { \_SB.PCI0.PEG0.PEGP._ON() }
+    Method (_PTS, 1, NotSerialized) {
+        If (_OSI ("Darwin")) {
+            // enable discrete graphics
+            If (CondRefOf(\_SB.PCI0.PEG0.PEGP._ON)) { \_SB.PCI0.PEG0.PEGP._ON() }
+        }
 
         // call into original _PTS method
         ZPTS(Arg0)
     }
-    
-    
-    // Method(_WAK, 1) match SSDT
-    Method (_WAK, 1, NotSerialized)
-    {
-        // Take care of bug regarding Arg0 in certain versions of OS X...
-        // (starting at 10.8.5, confirmed fixed 10.10.2)
-        If (Arg0 < 1 || Arg0 > 5) { Arg0 = 3 }
 
-        // Notify lid screen now
-        Notify (\_SB.PCI0.LPCB.EC.LID0, 0x80)
+    // Method(_WAK, 1) match SSDT
+    Method (_WAK, 1, NotSerialized) {
+        If (_OSI ("Darwin")) {
+            // Take care of bug regarding Arg0 in certain versions of OS X...
+            // (starting at 10.8.5, confirmed fixed 10.10.2)
+            If (Arg0 < 1 || Arg0 > 5) { Arg0 = 3 }
+
+            // disable discrete graphics
+            If (CondRefOf(\_SB.PCI0.PEG0.PEGP._OFF)) { \_SB.PCI0.PEG0.PEGP._OFF() }
+
+            // Notify lid screen now
+            Notify (\_SB.PCI0.LPCB.EC.LID0, 0x80)
+        }
 
         // call into original _WAK method
         Local0 = ZWAK(Arg0)
-
-        // disable discrete graphics
-        If (CondRefOf(\_SB.PCI0.PEG0.PEGP._OFF)) { \_SB.PCI0.PEG0.PEGP._OFF() }
 
         // return value from original _WAK
         Return (Local0)

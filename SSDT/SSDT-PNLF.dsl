@@ -13,26 +13,19 @@ DefinitionBlock("", "SSDT", 2, "hack", "_PNLF", 0)
 {
     External(_SB.PCI0.GFX0, DeviceObj)
 
-    Scope(_SB.PCI0.GFX0)
-    {
+    Scope(_SB.PCI0.GFX0) {
         OperationRegion(RMP3, PCI_Config, 0, 0x14)
     }
 
     // For backlight control
-    Device(_SB.PCI0.GFX0.PNLF)
-    {
+    Device(_SB.PCI0.GFX0.PNLF) {
         Name(_ADR, Zero)
         Name(_HID, EisaId("APP0002"))
         Name(_CID, "backlight")
         // _UID is set depending on PWMMax to match profiles in WhateverGreen.kext Info.plist
-        // 14: Sandy/Ivy 0x710
-        // 15: Haswell/Broadwell 0xad9
-        // 16: Skylake/KabyLake 0x56c (and some Haswell, example 0xa2e0008)
         Name(_UID, 16)
-        Name(_STA, 0x0B)
 
-        Field(^RMP3, AnyAcc, NoLock, Preserve)
-        {
+        Field(^RMP3, AnyAcc, NoLock, Preserve) {
             Offset(0x02), GDID,16,
             Offset(0x10), BAR1,32,
         }
@@ -47,8 +40,7 @@ DefinitionBlock("", "SSDT", 2, "hack", "_PNLF", 0)
         //   LEVD level of backlight for Coffeelake
         //   PCHL not currently used
         OperationRegion(RMB1, SystemMemory, BAR1 & ~0xF, 0xe1184)
-        Field(RMB1, AnyAcc, Lock, Preserve)
-        {
+        Field(RMB1, AnyAcc, Lock, Preserve) {
             Offset(0x48250),
             LEV2, 32,
             LEVL, 32,
@@ -65,8 +57,7 @@ DefinitionBlock("", "SSDT", 2, "hack", "_PNLF", 0)
         }
 
         // INI1 is common code used by FBTYPE_HSWPLUS and FBTYPE_CFL
-        Method(INI1, 1)
-        {
+        Method(INI1, 1) {
             // INTEL OPEN SOURCE HD GRAPHICS, INTEL IRIS GRAPHICS, AND INTEL IRIS PRO GRAPHICS PROGRAMMER'S REFERENCE MANUAL (PRM)
             // FOR THE 2015-2016 INTEL CORE PROCESSORS, CELERON PROCESSORS AND PENTIUM PROCESSORS BASED ON THE "SKYLAKE" PLATFORM
             // Volume 12: Display (https://01.org/sites/default/files/documentation/intel-gfx-prm-osrc-skl-vol12-display.pdf)
@@ -79,15 +70,21 @@ DefinitionBlock("", "SSDT", 2, "hack", "_PNLF", 0)
             //   4. Change duty cycle as needed in SBLC_PWM_CTL2 Backlight Duty Cycle.
             // This 0xC value comes from looking what OS X initializes this
             // register to after display sleep (using ACPIDebug/ACPIPoller)
-            If (0 == (2 & Arg0))
-            {
+            If (0 == (2 & Arg0)) {
                 Local5 = 0xC0000000
                 ^LEVW = Local5
             }
             // from step 2 above (you may need 1 instead)
-            If (4 & Arg0)
-            {
+            If (4 & Arg0) {
                 ^GRAN = 0
+            }
+        }
+        
+        Method (_STA, 0, NotSerialized) {
+            If (_OSI ("Darwin")) {
+                Return (0x0B)
+            } Else {
+                Return (Zero)
             }
         }
     }
