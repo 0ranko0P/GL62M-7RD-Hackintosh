@@ -1,3 +1,5 @@
+<img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
+
 MSI-GL62M 7RD Hackintosh
 ======
 [![works badge](https://cdn.jsdelivr.net/gh/nikku/works-on-my-machine@v0.2.0/badge.svg)][project_link]
@@ -8,16 +10,6 @@ With a few modifications, can work for all GL62M 7RD version *theoretically*.
 Tested platform: `GL62M 7RD-223cn`.
 
 Most of functions are working, include built-in camera, audio, Touchkpad, sleep and HDMI.
-
-## Notice
-#### This Clover branch is no longer maintained!
-Migrate to OpenCore now:
--   OpenCore has a cleaner codebase and clear debug logging
--   OpenCore has a large amount of documentation
--   On average, will start up faster
--   Supports Bless and Bootcamp switching
--   Has further developments to AptioMemoryFix directly within OpenCore and FwRuntimeServices
--   Uses a kext injection method which is more future proof, which does not break System Integrity Protection (SIP)
 
 ## Screenshots
 ![about][about_pic]
@@ -82,13 +74,11 @@ How to tear down: [Youtube][tear_down] (This video is for `7REX 1252`, but the p
 
 ## UEFI drivers
 ``` c++
-ApfsDriverLoader
-FSInject
-OsxAptioFix3Drv
-VirtualSmc
-// HFSPlus if clover is going to boot from USB
+OpenCanopy
+OpenRuntime
+Ps2KeyboardDxe
+// HFSPlus to boot installer
 ```
-> Note: SMCHelper.efi is not compatible with VirtualSMC.efi and must be removed
 
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
