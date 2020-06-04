@@ -9,6 +9,16 @@ Tested platform: `GL62M 7RD-223cn`.
 
 Most of functions are working, include built-in camera, audio, Touchkpad, sleep and HDMI.
 
+## Notice
+#### This Clover branch is no longer maintained!
+Migrate to OpenCore now:
+-   OpenCore has a cleaner codebase and clear debug logging
+-   OpenCore has a large amount of documentation
+-   On average, will start up faster
+-   Supports Bless and Bootcamp switching
+-   Has further developments to AptioMemoryFix directly within OpenCore and FwRuntimeServices
+-   Uses a kext injection method which is more future proof, which does not break System Integrity Protection (SIP)
+
 ## Screenshots
 ![about][about_pic]
 
