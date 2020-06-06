@@ -96,14 +96,16 @@ Fixing Power Management // fixed
 Fixing Battery Status // fixed
 ```
 * Hide Picker Screen
-Misc -> Boot -> ShowPicker -> set to False
 
-Holding Option or ESC key to show picker(like a real Mac)
+    Misc -> Boot -> ShowPicker -> set to False
+
+    Holding Option or ESC key to show picker(like a real Mac)
 
 * PlayChime
-Download file from [OcBinaryData][oc_boot_wav], and place it under OC/Resources/Audio
 
-UEFI -> Audio -> PlayChime -> set to True
+    Download file from [OcBinaryData][oc_boot_wav], and place it under OC/Resources/Audio
+
+    UEFI -> Audio -> PlayChime -> set to True
 
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
