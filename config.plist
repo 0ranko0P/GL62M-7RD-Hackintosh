@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key># Supported OC version</key>
+	<string>0.5.9</string>
 	<key>ACPI</key>
 	<dict>
 		<key>Add</key>
@@ -868,8 +870,6 @@
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<false/>
-			<key>RequestBootVarFallback</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
