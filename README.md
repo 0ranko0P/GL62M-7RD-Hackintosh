@@ -83,6 +83,18 @@ Ps2KeyboardDxe
 // HFSPlus to boot installer
 ```
 
+## Post Install
+[Follow Dortania guide][dortania_link].
+And skip these parts:
+``` c++
+Fixing Audio // fixed
+Fixing CFG Lock // unlocked in BIOS
+Fixing USB // fixed
+Emulated NVRAM // natively supported in GL62M 
+Fixing Power Management // fixed
+Fixing Battery Status // fixed
+```
+
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
@@ -91,6 +103,7 @@ More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 [brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/Catalina_DW1820A/kexts#wifiac--bt4le-dw1820a
 [bt_ts_link]: https://osxlatitude.com/forums/topic/11540-dw1820a-the-general-troubleshooting-thread
 [dortania_link]: https://dortania.github.io/oc-laptop-guide
+[dortania_link_post]: https://dortania.github.io/vanilla-laptop-guide/post-install
 [tear_down]: https://www.youtube.com/watch?v=-WHgFWf_66A
 [tear_down_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/Catalina_DW1820A/screenshots/Tear_down.png
 [wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
