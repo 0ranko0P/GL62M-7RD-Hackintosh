@@ -582,20 +582,6 @@
 		</dict>
 		<key>Entries</key>
 		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<false/>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>Name</key>
-				<string>Manjaro</string>
-				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x2,0xFFFF,0x0)/HD(1,GPT,FCE4556D-19FE-452C-99AE-2D5BB9772694,0x800,0x64000)/\EFI\Manjaro\grubx64.efi</string>
-			</dict>
 		</array>
 		<key>Security</key>
 		<dict>
