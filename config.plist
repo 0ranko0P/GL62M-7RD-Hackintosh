@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key># Supported OC version</key>
-	<string>0.6.1</string>
+	<string>0.6.2</string>
 	<key>ACPI</key>
 	<dict>
 		<key>Add</key>
@@ -498,7 +498,10 @@
 		<array>
 		</array>
 		<key>Emulate</key>
-		<dict/>
+		<dict>
+			<key>DummyPowerManagement</key>
+			<false/>
+		</dict>
 		<key>Patch</key>
 		<array>
 		</array>
@@ -520,13 +523,15 @@
 			<false/>
 			<key>DisableRtcChecksum</key>
 			<false/>
-			<key>DummyPowerManagement</key>
+			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
+			<false/>
+			<key>LegacyCommpage</key>
 			<false/>
 			<key>PanicNoKextDump</key>
 			<true/>
@@ -727,8 +732,12 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>MLB</key>
 			<string></string>
+			<key>ProcessorType</key>
+			<integer>0</integer>
 			<key>ROM</key>
 			<data></data>
 			<key>SpoofVendor</key>
