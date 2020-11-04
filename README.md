@@ -4,7 +4,7 @@ MSI-GL62M 7RD Hackintosh
 ======
 [![works badge](https://cdn.jsdelivr.net/gh/nikku/works-on-my-machine@v0.2.0/badge.svg)][project_link]
 
-Hackintosh clover configuration for [**MSI GL62M 7RD**][msi_overview].
+Hackintosh OpenCore configuration for [**MSI GL62M 7RD**][msi_overview].
 
 With a few modifications, can work for all GL62M 7RD version *theoretically*.
 Tested platform: `GL62M 7RD-223cn`.
