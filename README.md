@@ -110,19 +110,19 @@ Fixing Battery Status // fixed
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
-[1820a_models]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/Catalina_DW1820A/screenshots/dw1820A.png
-[about_pic]:https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/Catalina_DW1820A/screenshots/About.png
-[brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/Catalina_DW1820A/kexts#wifiac--bt4le-dw1820a
+[1820a_models]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/OC_Catalina_DW1820A/screenshots/dw1820A.png
+[about_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/OC_Catalina_DW1820A/screenshots/About.png
+[brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/OC_Catalina_DW1820A/kexts#wifiac--bt4le-dw1820a
 [bt_ts_link]: https://osxlatitude.com/forums/topic/11540-dw1820a-the-general-troubleshooting-thread
 [dortania_link]: https://dortania.github.io/oc-laptop-guide
 [dortania_link_post]: https://dortania.github.io/vanilla-laptop-guide/post-install
 [tear_down]: https://www.youtube.com/watch?v=-WHgFWf_66A
-[tear_down_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/Catalina_DW1820A/screenshots/Tear_down.png
+[tear_down_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/OC_Catalina_DW1820A/screenshots/Tear_down.png
 [wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
 [msi_overview]: https://www.msi.com/Laptop/support/GL62M-7RD
 [msi_bios]: https://www.msi.com/Laptop/support/GL62M-7RD#down-bios
 [msi_firmware]: https://www.msi.com/Laptop/support/GL62M-7RD#down-firmware
 [oc_boot_wav]: https://github.com/acidanthera/OcBinaryData/blob/master/Resources/Audio/OCEFIAudio_VoiceOver_Boot.wav
 [project_link]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh
-[usb_map]:  https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/Catalina_DW1820A/hotpatchs/deprecated/SSDT-UIAC.dsl
+[usb_map]:  https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/OC_Catalina_DW1820A/SSDT/deprecated/SSDT-UIAC.dsl
 [wlan_ts_link]: https://osxlatitude.com/forums/topic/11322-broadcom-bcm4350-cards-under-high-sierramojavecatalina
