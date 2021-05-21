@@ -77,7 +77,7 @@ Ps2KeyboardDxe
 ```
 
 ## Post Install
-[Follow Dortania guide][dortania_link].
+[Follow Dortania guide][dortania_link_post].
 And skip these parts:
 ``` c++
 Fixing Audio // fixed
