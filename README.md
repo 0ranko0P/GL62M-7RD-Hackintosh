@@ -114,8 +114,8 @@ More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 [about_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/OC_Catalina_DW1820A/screenshots/About.png
 [brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/OC_Catalina_DW1820A/kexts#wifiac--bt4le-dw1820a
 [bt_ts_link]: https://osxlatitude.com/forums/topic/11540-dw1820a-the-general-troubleshooting-thread
-[dortania_link]: https://dortania.github.io/oc-laptop-guide
-[dortania_link_post]: https://dortania.github.io/vanilla-laptop-guide/post-install
+[dortania_link]: https://dortania.github.io/OpenCore-Install-Guide
+[dortania_link_post]: https://dortania.github.io/OpenCore-Post-Install
 [tear_down]: https://www.youtube.com/watch?v=-WHgFWf_66A
 [tear_down_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/OC_Catalina_DW1820A/screenshots/Tear_down.png
 [wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
