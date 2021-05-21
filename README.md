@@ -59,21 +59,13 @@ In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
 [OpenCore Laptop Guide][dortania_link].
 
 ## WiFi & Bluetooth
-The DW1820A/BCM94350ZAE have different models:
-![1820A versions][1820a_models]
-It is best to have model CN-0VW3T3.
-For more details refer [osxlatitude][wlan_ts_link].
+I assume you replaced the built-in Intel card with Broadcom BCM94350ZAE/DW1820A.
 
-Replace built-in Intel card to Broadcom BCM94350ZAE/DW1820A.
+Install essential [Kext][brcm].
 
-How to tear down: [Youtube][tear_down] (This video is for `7REX 1252`, but the procedure is very similar.).
+For more details refer [osxlatitude][wlan_ts_link] and [Bluetooth Troubleshooting][bt_ts_link]
 
-```Always remove the power and battery first!!```
-
-![tear down][tear_down_pic]
-
- [Kext][brcm] part for BrcmPatchRAM installation.
- [Bluetooth Troubleshooting][bt_ts_link]
+If you prefer Intel card, refer [OpenIntelWireless][intel_link] and remove DW1820A related config.
 
 ## UEFI drivers
 ``` c++
@@ -110,19 +102,16 @@ Fixing Battery Status // fixed
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 
-[1820a_models]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/OC_Catalina_DW1820A/screenshots/dw1820A.png
-[about_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/OC_Catalina_DW1820A/screenshots/About.png
-[brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/OC_Catalina_DW1820A/kexts#wifiac--bt4le-dw1820a
+[about_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/OC_Bigsur_DW1820A/screenshots/About.png
+[brcm]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh/tree/OC_Bigsur_DW1820A/kexts#wifiac--bt4le-dw1820a
 [bt_ts_link]: https://osxlatitude.com/forums/topic/11540-dw1820a-the-general-troubleshooting-thread
 [dortania_link]: https://dortania.github.io/OpenCore-Install-Guide
 [dortania_link_post]: https://dortania.github.io/OpenCore-Post-Install
-[tear_down]: https://www.youtube.com/watch?v=-WHgFWf_66A
-[tear_down_pic]: https://raw.githubusercontent.com/0ranko0P/GL62M-7RD-Hackintosh/OC_Catalina_DW1820A/screenshots/Tear_down.png
-[wifi_guide]: https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423
+[intel_link]: https://github.com/OpenIntelWireless
 [msi_overview]: https://www.msi.com/Laptop/support/GL62M-7RD
 [msi_bios]: https://www.msi.com/Laptop/support/GL62M-7RD#down-bios
 [msi_firmware]: https://www.msi.com/Laptop/support/GL62M-7RD#down-firmware
 [oc_boot_wav]: https://github.com/acidanthera/OcBinaryData/blob/master/Resources/Audio/OCEFIAudio_VoiceOver_Boot.wav
 [project_link]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh
-[usb_map]:  https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/OC_Catalina_DW1820A/SSDT/deprecated/SSDT-UIAC.dsl
+[usb_map]:  https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/OC_Bigsur_DW1820A/SSDT/deprecated/SSDT-UIAC.dsl
 [wlan_ts_link]: https://osxlatitude.com/forums/topic/11322-broadcom-bcm4350-cards-under-high-sierramojavecatalina
