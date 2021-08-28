@@ -23,6 +23,9 @@ DefinitionBlock("", "SSDT", 2, "hack", "_PTSWAK", 0)
 
     External(_SB.PCI0.LPCB.EC.LID0, DeviceObj)
 
+    External (_SB_.PCI0.XHC_.PMEE, FieldUnitObj)
+    External (ZPTS, MethodObj)    // 1 Arguments
+
     // In DSDT, native _PTS and _WAK are renamed ZPTS/ZWAK
     // As a result, calls to these methods land here.
     
@@ -35,6 +38,15 @@ DefinitionBlock("", "SSDT", 2, "hack", "_PTSWAK", 0)
 
         // call into original _PTS method
         ZPTS(Arg0)
+
+        /*
+         * macOS will not power down USB as it needs an
+         * explicit call for S5 for proper shotdown procedure
+         */
+        If ((0x05 == Arg0))
+        {
+            \_SB.PCI0.XHC.PMEE = Zero
+        }
     }
 
     // Method(_WAK, 1) match SSDT
