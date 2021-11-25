@@ -70,7 +70,6 @@ If you prefer Intel card, refer [OpenIntelWireless][intel_link] and remove DW182
 ## UEFI drivers
 ``` c++
 AudioDxe
-OpenCanopy
 OpenRuntime
 Ps2KeyboardDxe
 // HFSPlus to boot installer
