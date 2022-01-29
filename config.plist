@@ -246,10 +246,8 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
-				<key>alc-layout-id</key>
+				<key>layout-id</key>
 				<data>YgAAAA==</data>
-				<key>alc-delay</key>
-				<integer>1000</integer>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
 				<key>device_type</key>
