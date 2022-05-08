@@ -88,15 +88,13 @@ Fixing Battery Status // fixed
 ```
 * Hide Picker Screen
 
-    Misc -> Boot -> ShowPicker -> set to False
-
-    Holding Option or ESC key to show picker(like a real Mac)
+    Disable ```Misc/Boot/ShowPicker```
 
 * PlayChime
 
-    Download file from [OcBinaryData][oc_boot_wav], and place it under OC/Resources/Audio
+    Download file from [OcBinaryData][oc_boot_mp3], and place it under ```OC/Resources/Audio```.
 
-    UEFI -> Audio -> PlayChime -> set to True
+    Enable ```UEFI/Audio/PlayChime```
 
 ## Note 
 More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
@@ -110,7 +108,7 @@ More USB ports info can be found at [SSDT-UIAC.dsl][usb_map]
 [msi_overview]: https://www.msi.com/Laptop/support/GL62M-7RD
 [msi_bios]: https://www.msi.com/Laptop/support/GL62M-7RD#down-bios
 [msi_firmware]: https://www.msi.com/Laptop/support/GL62M-7RD#down-firmware
-[oc_boot_wav]: https://github.com/acidanthera/OcBinaryData/blob/master/Resources/Audio/OCEFIAudio_VoiceOver_Boot.wav
+[oc_boot_mp3]: https://github.com/acidanthera/OcBinaryData/blob/master/Resources/Audio/OCEFIAudio_VoiceOver_Boot.mp3
 [project_link]: https://github.com/0ranko0P/GL62M-7RD-Hackintosh
 [usb_map]:  https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/OC_Bigsur_DW1820A/SSDT/deprecated/SSDT-UIAC.dsl
 [wlan_ts_link]: https://osxlatitude.com/forums/topic/11322-broadcom-bcm4350-cards-under-high-sierramojavecatalina
